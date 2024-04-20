@@ -7,7 +7,7 @@ import { addOnFactory } from './shared.js';
 export interface BlobAddon {
   get blob(): BlobManager;
 }
-
+// 类似 blob extends DocCollection
 export const blob = addOnFactory<keyof BlobAddon>(
   originalClass =>
     class extends originalClass {
