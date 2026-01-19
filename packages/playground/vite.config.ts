@@ -68,8 +68,8 @@ export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, __dirname, '') };
 
   return defineConfig({
-    server:{
-      port: 8888
+    server: {
+      port: 8888,
     },
     envDir: __dirname,
     define: {
